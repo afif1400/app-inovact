@@ -5,9 +5,14 @@ import facebook from "../../assets/images/social-icons/facebook.png"
 import apple from "../../assets/images/social-icons/apple.png"
 
 
-const LoginForm = () => {
+interface IUserCred {
+	email: string,
+	password: string,
+	confirmPassword: string
+}
+const LoginForm: React.FC = () => {
 	const [isSignup, setIsSignup] = useState(false);
-	const [userCred, setUserCred] = useState({email: "", password: "", confirmPassword: ""})
+	const [userCred, setUserCred] = useState<IUserCred>({email: "", password: "", confirmPassword: ""})
 	
 	const handleSignup = (e: any) => {
 		e.preventDefault();
@@ -16,7 +21,7 @@ const LoginForm = () => {
 
 	const handleInputChange = (e:any) => {
 		const property = e.target.id;
-		setUserCred((prev) => { return { ...prev, [property]: e.target.value } })	
+		setUserCred((prev) => { return { ...prev, [property]: e.target.value } })
 	}
 
 	return <div className="login-page">
