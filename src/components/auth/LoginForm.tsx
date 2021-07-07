@@ -22,8 +22,6 @@ const LoginForm: React.FC = () => {
 	const handleInputChange = (e:any) => {
 		const property = e.target.id;
 		setUserCred((prev) => { return { ...prev, [property]: e.target.value } })
-		console.log(userCred);
-		
 	}
 
 	return <div className="login-page">
