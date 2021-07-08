@@ -1,9 +1,11 @@
 import React from "react";
-import LoginForm from "./components/auth/LoginForm";
+// import LoginForm from "./components/auth/LoginForm";
+import Form from "./components/userInfo/StepForm";
 
 const MainComponent = () => {
 	return <div>
-		<LoginForm/>
+		{/* <LoginForm/> */}
+		<Form/>
 	</div>;
 };
 

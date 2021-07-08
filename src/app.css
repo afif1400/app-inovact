@@ -52,6 +52,14 @@ html {
   transform: scale(0.95);
   box-shadow: 0 0.5px 1px #769fb6; }
 
+.button--blue--round {
+  border-radius: 50% !important;
+  background-color: black;
+  padding: 5px !important;
+  background: url("/src/assets/images/login/buttonArrow.png") no-repeat;
+  width: 5.5rem;
+  height: 5.5rem; }
+
 .input-component {
   display: block;
   width: 30rem;
@@ -113,3 +121,38 @@ html {
       color: #fff;
       padding: 0.3rem;
       border-radius: 15px; }
+
+.user-detail__container {
+  background-color: #769fb6; }
+
+.user-detail__step {
+  text-align: center;
+  margin-top: 4rem;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5; }
+  .user-detail__step--active {
+    opacity: 1; }
+  .user-detail__step--finish {
+    background-color: #dddddd; }
+
+.user-detail__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .user-detail__form__img {
+    width: 7.1rem; }
+  .user-detail__form--buttons {
+    overflow: auto; }
+  .user-detail__form--tab {
+    display: none; }
