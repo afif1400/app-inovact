@@ -21,7 +21,7 @@ interface IUserInfo {
 const Form: React.FC = () => {
     const [userInfo, setUserInfo] = useState<IUserInfo>(
         { 
-            step: 3,
+            step: 1,
             type: "",
             name: "",
             ph: "",
@@ -69,14 +69,17 @@ const Form: React.FC = () => {
         if(userInfo.step === 1) {
             return <Step1
                 typeChange = {handleChange}
+                nextStep = {nextStep}
             />
         } else if(userInfo.step === 2) {
             return <Step2
                 typeChange = {handleChange}
+                nextStep = {nextStep}
             />
         } else if(userInfo.step === 3) {
             return <Step3
                 typeChange = {handleChange}
+                nextStep = {nextStep}
             />
         } 
     }
