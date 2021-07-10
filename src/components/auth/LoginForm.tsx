@@ -72,7 +72,7 @@ const LoginForm: React.FC = () => {
           ></input>
         )}
 
-        <a href="/" className="button--blue">
+        <a href="/" className="button button--blue">
           {isSignup ? 'Sign up' : 'Log in'}
         </a>
 

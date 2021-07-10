@@ -1,9 +1,8 @@
-.button--blue {
+.button {
   &:link,
   &:visited {
     display: block;
     font-size: 2rem;
-    background-color: $color-login-component;
     padding: 1rem;
     border-radius: 15px;
     color: $color-white;
@@ -17,5 +16,14 @@
   &:active {
     transform: scale(0.95);
     box-shadow: 0 0.5px 1px $color-login-component;
+  }
+  &--blue {
+    background-color: $color-login-component;
+  }
+  &--purple {
+    background-color: $color-gradient-2;
+    &:hover {
+      @include component-shadow;
+    }
   }
 }
