@@ -20,3 +20,7 @@
     } //1800
   }
 }
+
+@mixin component-shadow {
+  box-shadow: 0 1px 12px $color-shadow;
+}

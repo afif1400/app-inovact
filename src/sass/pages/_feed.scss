@@ -14,14 +14,14 @@
       height: 26.2rem;
       background-color: $color-white;
       border-radius: 12px;
-      box-shadow: 0 2px 4px $color-shadow;
+      @include component-shadow;
     }
     &__teams {
       margin-top: 2rem;
       height: 26.2rem;
       background-color: $color-white;
       border-radius: 12px;
-      box-shadow: 0 2px 4px $color-shadow;
+      @include component-shadow;
     }
     @include respond(tab-port) {
       display: none;
@@ -34,7 +34,7 @@
       height: 17rem;
       background-color: $color-white;
       border-radius: 12px;
-      box-shadow: 0 2px 4px $color-shadow;
+      @include component-shadow;
     }
     @media screen and (max-width: 1000px) {
       width: 80%;
@@ -51,21 +51,21 @@
       height: 26.2rem;
       background-color: $color-white;
       border-radius: 12px;
-      box-shadow: 0 2px 4px $color-shadow;
+      @include component-shadow;
     }
     &__featured-projects {
       height: 17rem;
       margin-top: 2rem;
       background-color: $color-white;
       border-radius: 12px;
-      box-shadow: 0 2px 4px $color-shadow;
+      @include component-shadow;
     }
     &__friend-suggestions {
       height: 17rem;
       margin-top: 2rem;
       background-color: $color-white;
       border-radius: 12px;
-      box-shadow: 0 2px 4px $color-shadow;
+      @include component-shadow;
     }
     @media screen and (max-width: 1000px) {
       display: none;

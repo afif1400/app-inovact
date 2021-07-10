@@ -96,7 +96,7 @@ body {
 .nav-component {
   width: 100%;
   height: 6.5rem;
-  box-shadow: 0px 2px 4px #cdc4e7;
+  box-shadow: 0 1px 12px #cdc4e7;
   display: flex;
   align-items: center; }
   .nav-component--bottom {
@@ -114,7 +114,7 @@ body {
     width: 4rem;
     height: 4rem;
     border-radius: 12px;
-    box-shadow: 0px 2px 4px #cdc4e7;
+    box-shadow: 0 1px 12px #cdc4e7;
     display: none;
     margin-left: 2rem; }
     @media only screen and (max-width: 56.25em) {
@@ -193,13 +193,13 @@ body {
     height: 26.2rem;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 4px #cdc4e7; }
+    box-shadow: 0 1px 12px #cdc4e7; }
   .feed__left__teams {
     margin-top: 2rem;
     height: 26.2rem;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 4px #cdc4e7; }
+    box-shadow: 0 1px 12px #cdc4e7; }
   @media only screen and (max-width: 56.25em) {
     .feed__left {
       display: none; } }
@@ -211,7 +211,7 @@ body {
     height: 17rem;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 4px #cdc4e7; }
+    box-shadow: 0 1px 12px #cdc4e7; }
   @media screen and (max-width: 1000px) {
     .feed__center {
       width: 80%;
@@ -227,19 +227,19 @@ body {
     height: 26.2rem;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 4px #cdc4e7; }
+    box-shadow: 0 1px 12px #cdc4e7; }
   .feed__right__featured-projects {
     height: 17rem;
     margin-top: 2rem;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 4px #cdc4e7; }
+    box-shadow: 0 1px 12px #cdc4e7; }
   .feed__right__friend-suggestions {
     height: 17rem;
     margin-top: 2rem;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 4px #cdc4e7; }
+    box-shadow: 0 1px 12px #cdc4e7; }
   @media screen and (max-width: 1000px) {
     .feed__right {
       display: none; } }
