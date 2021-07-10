@@ -5,16 +5,8 @@ const Feed: React.FC = () => {
   const [hamburger, setHamburger] = useState(false)
   const handleHamburger = () => {
     setHamburger(!hamburger)
-    // if (!hamburger) {
-    //   window.document
-    //     .getElementById('ham')!
-    //     .classList.replace('u-hidden', 'u-visible')
-    // } else {
-    //   window.document
-    //     .getElementById('ham')!
-    //     .classList.replace('u-visible', 'u-hidden')
-    // }
   }
+
   return (
     <section className="feed">
       <div className="nav-component">

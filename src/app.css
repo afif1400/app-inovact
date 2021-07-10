@@ -189,7 +189,7 @@ body {
   .feed__center__create-post {
     height: 17rem;
     background-color: #fff; }
-  @media only screen and (max-width: 56.25em) {
+  @media screen and (max-width: 1000px) {
     .feed__center {
       width: 80%;
       margin: 0 auto; } }
@@ -211,6 +211,6 @@ body {
     height: 17rem;
     margin-top: 2rem;
     background-color: #fff; }
-  @media only screen and (max-width: 56.25em) {
+  @media screen and (max-width: 1000px) {
     .feed__right {
       display: none; } }

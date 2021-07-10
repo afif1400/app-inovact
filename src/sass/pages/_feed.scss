@@ -30,7 +30,7 @@
       height: 17rem;
       background-color: $color-white;
     }
-    @include respond(tab-port) {
+    @media screen and (max-width: 1000px) {
       width: 80%;
       margin: 0 auto;
     }
@@ -55,7 +55,7 @@
       margin-top: 2rem;
       background-color: $color-white;
     }
-    @include respond(tab-port) {
+    @media screen and (max-width: 1000px) {
       display: none;
     }
   }
