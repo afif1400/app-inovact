@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif; }
+
+.heading-login {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3.2rem; }
+  .heading-login--secondary {
+    font-size: 2rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-left-text {
+  text-align: left; }
+
+.u-right-text {
+  text-align: right; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem; }
+
+.button--blue:link, .button--blue:visited {
+  display: block;
+  font-size: 2rem;
+  background-color: #769fb6;
+  padding: 1rem;
+  border-radius: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 1px 2px #769fb6; }
+
+.button--blue:hover {
+  box-shadow: 0 2px 4px #769fb6; }
+
+.button--blue:active {
+  transform: scale(0.95);
+  box-shadow: 0 0.5px 1px #769fb6; }
+
+.button--blue--round {
+  border-radius: 50% !important;
+  background-color: black;
+  padding: 5px !important;
+  background: url("/src/assets/images/login/buttonArrow.png") no-repeat;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: auto; }
+
+.input-component {
+  display: block;
+  width: 30rem;
+  max-width: 30rem;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  border-style: solid !important;
+  border-color: #a8dadc;
+  background-color: #f6ffff;
+  margin-bottom: 2rem; }
+  .input-component:focus {
+    outline: none;
+    border: 2px solid #a8dadc;
+    box-shadow: 0 1px 2px rgba(168, 218, 220, 0.6); }
+
+.login-page__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .login-page__form__img {
+    width: 7.1rem; }
+  .login-page__form__division {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin-top: 2rem; }
+    .login-page__form__division > span {
+      background: #fff;
+      padding: 0 10px; }
+  .login-page__form__social-icons {
+    display: flex;
+    justify-content: space-around; }
+    .login-page__form__social-icons__link {
+      padding: 1rem;
+      transition: all 0.2s; }
+      .login-page__form__social-icons__link:hover {
+        transform: scale(1.2); }
+      .login-page__form__social-icons__link:active {
+        transform: scale(1); }
+
+.signup-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between; }
+  .signup-links > div > a:link, .signup-links > div > a:visited {
+    color: #769fb6;
+    text-decoration: none;
+    transition: all 0.2s; }
+    .signup-links > div > a:link:hover, .signup-links > div > a:visited:hover {
+      background-color: #769fb6;
+      color: #fff;
+      padding: 0.3rem;
+      border-radius: 15px; }
+
+.user-detail__container {
+  background-color: #769fb6; }
+
+.user-detail__step-container {
+  text-align: center;
+  margin-top: 40px; }
+
+.user-detail__step {
+  text-align: center;
+  margin-top: 4rem;
+  height: 1rem;
+  width: 10rem;
+  margin: 1rem 2rem;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 15% 15%;
+  display: inline-block;
+  opacity: 0.5; }
+  .user-detail__step--active {
+    background-color: black;
+    opacity: 1; }
+  .user-detail__step--finish {
+    background-color: #dddddd; }
+
+.user-detail__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: #e5e5e5;
+  width: 80rem;
+  height: 50rem;
+  align-items: middle;
+  justify-content: center; }
+  .user-detail__form__img {
+    width: 12rem;
+    margin: 2rem; }
+    .user-detail__form__img:hover {
+      transform: scale(1.05); }
+    .user-detail__form__img:active {
+      transform: scale(1); }
+  .user-detail__form--buttons {
+    overflow: auto; }
+
+.user-detail__type {
+  margin-top: 5rem; }
