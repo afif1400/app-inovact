@@ -7,8 +7,11 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 10px;
-  font-family: "Roboto", sans-serif; }
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  background-color: #e5e5e5; }
 
 .heading-login {
   font-family: "Ubuntu", sans-serif;
@@ -33,6 +36,12 @@ html {
 
 .u-margin-bottom-large {
   margin-bottom: 8rem; }
+
+.u-hidden {
+  display: none; }
+
+.u-visible {
+  display: initial; }
 
 .button--blue:link, .button--blue:visited {
   display: block;
@@ -69,10 +78,48 @@ html {
     border: 2px solid #a8dadc;
     box-shadow: 0 1px 2px rgba(168, 218, 220, 0.6); }
 
+.nav-component {
+  width: 100%;
+  height: 9.2rem;
+  box-shadow: 0px 2px 8px #cdc4e7;
+  display: flex;
+  align-items: center; }
+  .nav-component--bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    height: 6.5rem;
+    box-shadow: 0px -2px 8px #cdc4e7;
+    z-index: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .nav-component--bottom {
+        display: initial; } }
+  .nav-component__hamburger {
+    width: 4rem;
+    height: 4rem;
+    box-shadow: 0px 2px 8px #cdc4e7;
+    display: none;
+    margin-left: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .nav-component__hamburger {
+        display: initial; } }
+
+.nav-hamburger {
+  width: 80vw;
+  max-width: 30rem;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: black;
+  z-index: 2; }
+
 .login-page__form {
   position: absolute;
   top: 50%;
   left: 50%;
+  background-color: #fff;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 2rem;
@@ -113,3 +160,57 @@ html {
       color: #fff;
       padding: 0.3rem;
       border-radius: 15px; }
+
+.feed__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 8rem 0 8rem; }
+  @media only screen and (max-width: 75em) {
+    .feed__wrapper {
+      margin: 1rem; } }
+
+.feed__left {
+  width: 20%;
+  padding: 1rem; }
+  .feed__left__links {
+    height: 26.2rem;
+    background-color: #fff; }
+  .feed__left__teams {
+    margin-top: 2rem;
+    height: 26.2rem;
+    background-color: #fff; }
+  @media only screen and (max-width: 56.25em) {
+    .feed__left {
+      display: none; } }
+
+.feed__center {
+  width: 60%;
+  padding: 1rem; }
+  .feed__center__create-post {
+    height: 17rem;
+    background-color: #fff; }
+  @media only screen and (max-width: 56.25em) {
+    .feed__center {
+      width: 80%;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 37.5em) {
+    .feed__center {
+      width: 100%; } }
+
+.feed__right {
+  width: 20%;
+  padding: 1rem; }
+  .feed__right__profile {
+    height: 26.2rem;
+    background-color: #fff; }
+  .feed__right__featured-projects {
+    height: 17rem;
+    margin-top: 2rem;
+    background-color: #fff; }
+  .feed__right__friend-suggestions {
+    height: 17rem;
+    margin-top: 2rem;
+    background-color: #fff; }
+  @media only screen and (max-width: 56.25em) {
+    .feed__right {
+      display: none; } }

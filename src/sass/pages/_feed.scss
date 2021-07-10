@@ -1,0 +1,62 @@
+.feed {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 8rem 0 8rem;
+    @include respond(tab-land) {
+      margin: 1rem;
+    }
+  }
+  &__left {
+    width: 20%;
+    padding: 1rem;
+    &__links {
+      height: 26.2rem;
+      background-color: $color-white;
+    }
+    &__teams {
+      margin-top: 2rem;
+      height: 26.2rem;
+      background-color: $color-white;
+    }
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+  &__center {
+    width: 60%;
+    padding: 1rem;
+    &__create-post {
+      height: 17rem;
+      background-color: $color-white;
+    }
+    @include respond(tab-port) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+  &__right {
+    width: 20%;
+    padding: 1rem;
+    &__profile {
+      height: 26.2rem;
+      background-color: $color-white;
+    }
+    &__featured-projects {
+      height: 17rem;
+      margin-top: 2rem;
+      background-color: $color-white;
+    }
+    &__friend-suggestions {
+      height: 17rem;
+      margin-top: 2rem;
+      background-color: $color-white;
+    }
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+}
