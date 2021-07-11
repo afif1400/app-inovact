@@ -1,11 +1,11 @@
 import React from "react";
 // import LoginForm from "./components/auth/LoginForm";
-import Form from "./components/userInfo/StepForm";
-
+//import Form from "./components/userInfo/StepForm";
+import UserDetails from './components/userInfo/UserInfo';
 const MainComponent = () => {
 	return <div>
 		{/* <LoginForm/> */}
-		<Form/>
+		<UserDetails/>
 	</div>;
 };
 

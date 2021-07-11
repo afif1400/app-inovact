@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
+import { useSpring, animated } from 'react-spring';
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
+import Step4 from "./Step4";
 
 interface IUserInfo {
     step: number,
@@ -15,7 +17,9 @@ interface IUserInfo {
     profession: string,
     education: string,
     field: string,
-	years: number    
+	years: number ,  
+    //step 4
+    image: string
 }
 
 const Form: React.FC = () => {
@@ -29,7 +33,8 @@ const Form: React.FC = () => {
             profession: "",
             education: "",
             field: "",
-            years: 0
+            years: 0,
+            image:""
         }
     )    
 
@@ -82,12 +87,27 @@ const Form: React.FC = () => {
                 nextStep = {nextStep}
             />
         } 
+        else if(userInfo.step === 4) {
+            return <Step4
+                typeChange = {handleChange}
+                nextStep = {nextStep}
+            />
+        } 
     }
+    const styles = useSpring({
+        loop:false,
+        from: { x: -90 },
+        to: { x: 0 },
+      })
     
     return (
-        <div className="user-detail">
-            {showStep()}
-        </div>
+              
+                     <div  className="user-detail">
+                          <animated.div style={{ borderRadius: 16, ...styles}}>
+                             {showStep()}
+                           </animated.div> 
+                    </div>
+                   
     );
 };
 
