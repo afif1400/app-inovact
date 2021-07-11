@@ -13,13 +13,12 @@ const TopNavbar: React.FC = () => {
     <div>
       <div className="nav-component">
         <div className="nav-component__items">
-          <div onClick={handleHamburger} className="nav-component__hamburger">
-            <img
-              className="nav-component__hamburger__image"
-              src={user}
-              alt="User Profile"
-            />
-          </div>
+          <img
+            onClick={handleHamburger}
+            className="nav-component__hamburger"
+            src={user}
+            alt="User Profile"
+          />
           <img className="nav-component__logo" src={logo} alt="Inovact" />
           <div className="nav-component__search">
             <input

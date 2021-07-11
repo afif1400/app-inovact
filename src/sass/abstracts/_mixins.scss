@@ -27,7 +27,7 @@
 }
 
 @mixin component-shadow {
-  box-shadow: 0 1px 8px $color-shadow;
+  box-shadow: 0 1px 1px $color-shadow;
 }
 
 @mixin hover-cta {

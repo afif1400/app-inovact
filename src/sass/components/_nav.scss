@@ -2,7 +2,7 @@
   @include component-shadow;
   width: 100%;
   height: 6.5rem;
-  background-color: $color-login-bg;
+  background-color: $color-bg;
   display: flex;
   align-items: center;
   &__items {
@@ -83,15 +83,10 @@
     }
   }
   &__hamburger {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    &__image {
-      height: 100%;
-      width: 100%;
-      border-radius: 50%;
-    }
-    @include component-shadow;
+    width: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    // @include component-shadow;
     display: none;
     @include respond(tab-port) {
       display: initial;

@@ -23,7 +23,7 @@ html {
   font-family: 'Montserrat', sans-serif; }
 
 body {
-  background-color: #fff; }
+  background-color: #eeeeeebd; }
 
 .heading-login {
   font-family: "Ubuntu", sans-serif;
@@ -81,7 +81,7 @@ body {
 .button--purple {
   background-color: #5005ba; }
   .button--purple:hover {
-    box-shadow: 0 1px 8px rgba(34, 34, 34, 0.5); }
+    box-shadow: 0 1px 1px rgba(34, 34, 34, 0.5); }
 
 .input-component {
   display: block;
@@ -125,10 +125,10 @@ body {
       border-radius: 10px; }
 
 .nav-component {
-  box-shadow: 0 1px 8px rgba(34, 34, 34, 0.5);
+  box-shadow: 0 1px 1px rgba(34, 34, 34, 0.5);
   width: 100%;
   height: 6.5rem;
-  background-color: #e5e5e5;
+  background-color: #eeeeeebd;
   display: flex;
   align-items: center; }
   .nav-component__items {
@@ -202,15 +202,10 @@ body {
       .nav-component--bottom {
         display: initial; } }
   .nav-component__hamburger {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    box-shadow: 0 1px 8px rgba(34, 34, 34, 0.5);
+    width: 50px;
+    border-radius: 100%;
+    cursor: pointer;
     display: none; }
-    .nav-component__hamburger__image {
-      height: 100%;
-      width: 100%;
-      border-radius: 50%; }
     @media only screen and (max-width: 56.25em) {
       .nav-component__hamburger {
         display: initial; } }
@@ -275,13 +270,13 @@ body {
 .feed__wrapper {
   display: flex;
   flex-direction: row;
-  margin: 2rem 8rem 0 8rem; }
+  margin: 2rem 15rem 0 15rem; }
   @media only screen and (max-width: 75em) {
     .feed__wrapper {
       margin: 1rem; } }
 
 .feed__left {
-  width: 20%;
+  width: 22.5%;
   padding: 1rem; }
   .feed__left__links {
     height: 26.2rem;
@@ -292,7 +287,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     padding: 0 10%;
-    box-shadow: 0 1px 8px rgba(34, 34, 34, 0.5); }
+    box-shadow: 0 1px 1px rgba(34, 34, 34, 0.5); }
     .feed__left__links__item {
       width: 100%;
       display: flex;
@@ -319,19 +314,19 @@ body {
     height: 26.2rem;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 1px 8px rgba(34, 34, 34, 0.5); }
+    box-shadow: 0 1px 1px rgba(34, 34, 34, 0.5); }
   @media only screen and (max-width: 56.25em) {
     .feed__left {
       display: none; } }
 
 .feed__center {
-  width: 60%;
+  width: 55%;
   padding: 1rem; }
   .feed__center__create-post {
     background-color: #fff;
     border-radius: 12px;
     padding: 2rem;
-    box-shadow: 0 1px 8px rgba(34, 34, 34, 0.5); }
+    box-shadow: 0 1px 1px rgba(34, 34, 34, 0.5); }
     .feed__center__create-post__text-area {
       display: flex;
       align-items: flex-start;
@@ -344,7 +339,7 @@ body {
       padding: 2rem 2rem 0 2rem;
       display: flex;
       align-items: center;
-      justify-content: space-around; }
+      justify-content: space-between; }
       .feed__center__create-post__actions__link {
         display: flex;
         align-items: center;
@@ -365,14 +360,14 @@ body {
       width: 100%; } }
 
 .feed__right {
-  width: 20%;
+  width: 22.5%;
   padding: 1rem; }
   .feed__right__profile {
     height: 26.2rem;
     background-color: #fff;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 1px 8px rgba(34, 34, 34, 0.5); }
+    box-shadow: 0 1px 1px rgba(34, 34, 34, 0.5); }
     .feed__right__profile__lower {
       height: 80%;
       position: relative;
@@ -394,25 +389,30 @@ body {
     .feed__right__profile__designation {
       font-weight: 500;
       color: rgba(34, 34, 34, 0.5); }
-    .feed__right__profile__button {
+    .feed__right__profile__button:link, .feed__right__profile__button:visited {
       position: absolute;
       bottom: 2rem;
       left: 50%;
-      transform: translate(-50%);
+      transform: translateX(-50%);
       width: 90%;
       margin: 0 auto; }
+    .feed__right__profile__button:active {
+      transform: translate(-50%, 0);
+      box-shadow: 0 0.5px 1px #769fb6; }
+    .feed__right__profile__button:hover {
+      transform: translate(-50%, -5px); }
   .feed__right__featured-projects {
     height: 17rem;
     margin-top: 2rem;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 1px 8px rgba(34, 34, 34, 0.5); }
+    box-shadow: 0 1px 1px rgba(34, 34, 34, 0.5); }
   .feed__right__friend-suggestions {
     height: 17rem;
     margin-top: 2rem;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 1px 8px rgba(34, 34, 34, 0.5); }
+    box-shadow: 0 1px 1px rgba(34, 34, 34, 0.5); }
   @media screen and (max-width: 1000px) {
     .feed__right {
       display: none; } }
