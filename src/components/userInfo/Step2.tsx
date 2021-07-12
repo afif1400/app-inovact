@@ -3,7 +3,6 @@ type AppProps = {
     typeChange: any,
     nextStep: any
 };
-
 const Step2 = ({ typeChange, nextStep }: AppProps) => {	
     const continueStep = (e: any) => {
         e.preventDefault();
@@ -14,7 +13,6 @@ const Step2 = ({ typeChange, nextStep }: AppProps) => {
         from: { x: -90 },
         to: { x: 0 },
       })
-    
     return (
         <div className="user-detail__form">
             <div className="user-detail__step-container">
@@ -36,7 +34,6 @@ const Step2 = ({ typeChange, nextStep }: AppProps) => {
                 </div>
             </animated.div> 
        
-
         <a href="/" className="button--blue--round button--blue" onClick={continueStep}></a>
         </div>
     );

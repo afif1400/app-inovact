@@ -14,8 +14,6 @@ const Step1 = ({typeChange, nextStep}: AppProps) => {
         e.preventDefault();
         nextStep();
     }
-
-    
 	return (
         
             <div className="user-detail__form">	
