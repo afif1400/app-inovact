@@ -25,5 +25,15 @@
     &:hover {
       @include component-shadow;
     }
+
+    &--round {
+      border-radius: 50% !important;
+      background-color: black;
+      padding: 5px !important;
+      background: url('/src/assets/images/login/buttonArrow.png') no-repeat;
+      width: 5.5rem;
+      height: 5.5rem;
+      margin: auto;
+    }
   }
 }
