@@ -1,9 +1,9 @@
-import axios from "axios";
+import axios from 'axios'
 
 const API = axios.create({
-	baseURL: "https://inovact.in/api",
-});
+  baseURL: 'https://inovact.in/api',
+})
 
 export const fetchProjects = async (): Promise<any> => {
-	return await API.get("/projects");
-};
+  return await API.get('/projects')
+}

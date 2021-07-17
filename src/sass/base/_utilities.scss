@@ -21,3 +21,15 @@
 .u-margin-bottom-large {
   margin-bottom: 8rem;
 }
+
+.u-hidden {
+  display: none;
+}
+
+.u-visible {
+  display: initial;
+}
+
+.u-move-out-animation {
+  animation: moveOutLeft 0.5s;
+}

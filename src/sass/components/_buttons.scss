@@ -1,9 +1,8 @@
-.button--blue {
+.button {
   &:link,
   &:visited {
     display: block;
     font-size: 2rem;
-    background-color: $color-login-component;
     padding: 1rem;
     border-radius: 15px;
     color: $color-white;
@@ -18,13 +17,23 @@
     transform: scale(0.95);
     box-shadow: 0 0.5px 1px $color-login-component;
   }
-  &--round {
-    border-radius: 50% !important;
-    background-color: black;
-    padding: 5px !important;
-    background: url('/src/assets/images/login/buttonArrow.png') no-repeat;
-    width: 5.5rem;
-    height: 5.5rem;
-    margin: auto;
+  &--blue {
+    background-color: $color-login-component;
+  }
+  &--purple {
+    background-color: $color-gradient-2;
+    &:hover {
+      @include component-shadow;
+    }
+
+    &--round {
+      border-radius: 50% !important;
+      background-color: black;
+      padding: 5px !important;
+      background: url('/src/assets/images/login/buttonArrow.png') no-repeat;
+      width: 5.5rem;
+      height: 5.5rem;
+      margin: auto;
+    }
   }
 }
