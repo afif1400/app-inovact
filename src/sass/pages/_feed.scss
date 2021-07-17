@@ -27,11 +27,10 @@
         font-size: 2rem;
         color: $color-black;
         transition: all 0.2s;
-        @include hover-cta;
+        @include hover-cta(primary);
         &:hover {
           & > img {
-            filter: invert(100%) sepia(0%) saturate(6%) hue-rotate(172deg)
-              brightness(106%) contrast(100%);
+            @include filter-white;
           }
         }
         @include respond(tab-land) {
@@ -39,8 +38,7 @@
         }
         &__image {
           margin-right: 1rem;
-          filter: invert(16%) sepia(61%) saturate(6518%) hue-rotate(265deg)
-            brightness(69%) contrast(120%);
+          @include filter;
         }
       }
       @include component-shadow;
@@ -68,30 +66,10 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-evenly;
+        font-size: 1.2rem;
         &__image {
           width: 50px;
           border-radius: 100%;
-        }
-      }
-      &__actions {
-        height: 100%;
-        padding: 2rem 2rem 0 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        &__link {
-          display: flex;
-          align-items: center;
-          font-size: 1.6rem;
-          text-decoration: none;
-          color: $color-black;
-          &__img {
-            margin-right: 1rem;
-          }
-        }
-        &__button {
-          border-radius: 3rem !important;
-          padding: 1rem 4rem !important;
         }
       }
     }
@@ -116,7 +94,7 @@
         height: 80%;
         position: relative;
         top: 20%;
-        background-color: $color-login-bg;
+        background-color: rgba($color-component, 0.1);
         border-radius: 50px 50px 12px 12px;
         padding: 3rem 2rem 2rem;
       }
@@ -146,6 +124,7 @@
           transform: translateX(-50%);
           width: 90%;
           margin: 0 auto;
+          background-color: $color-component;
         }
         &:active {
           transform: translate(-50%, 0);

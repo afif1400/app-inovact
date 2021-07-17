@@ -13,12 +13,13 @@ const TopNavbar: React.FC = () => {
     <div>
       <div className="nav-component">
         <div className="nav-component__items">
-          <img
-            onClick={handleHamburger}
-            className="nav-component__hamburger"
-            src={user}
-            alt="User Profile"
-          />
+          <div className="nav-component__hamburger" onClick={handleHamburger}>
+            <img
+              className="nav-component__hamburger"
+              src={user}
+              alt="User Profile"
+            />
+          </div>
           <img className="nav-component__logo" src={logo} alt="Inovact" />
           <div className="nav-component__search">
             <input
@@ -32,10 +33,7 @@ const TopNavbar: React.FC = () => {
             ></i>
           </div>
           <a href="/" className="nav-component__link">
-            Projects
-          </a>
-          <a href="/" className="nav-component__link">
-            Ideas
+            Home
           </a>
           <a href="/" className="nav-component__link">
             Teams
