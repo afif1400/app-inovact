@@ -19,7 +19,8 @@
             text-align: center;
             border-bottom: 1px solid #000;
             line-height: 0.1em;
-            margin-top: 3rem;
+            margin-top: 3rem !important;
+            margin-bottom: 2rem !important;
             & > span {
                 background: #fff;
                 padding: 0 10px;
@@ -43,7 +44,7 @@
 }
 
 .signup-links {
-    margin-top: 1rem;
+    margin-top: 1rem !important;
     display: flex;
     justify-content: space-between;
     & > div > a {
