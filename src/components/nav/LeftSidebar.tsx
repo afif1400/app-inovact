@@ -10,18 +10,18 @@ const LeftSidebar: React.FC = () => {
                 <a className="feed__left__links__item" href="/">
                     <img
                         className="feed__left__links__item__image"
-                        src={projects}
-                        alt="My Projects"
+                        src={ideas}
+                        alt="My Ideas"
                     />
-                    Projects
+                    Ideas
                 </a>
                 <a className="feed__left__links__item" href="/">
                     <img
                         className="feed__left__links__item__image"
-                        src={ideas}
-                        alt="My Ideas"
+                        src={projects}
+                        alt="My Projects"
                     />
-                    My Ideas
+                    Projects
                 </a>
                 <a className="feed__left__links__item" href="/">
                     <img
