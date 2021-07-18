@@ -1,69 +1,68 @@
 .user-detail {
     &__container {
-      background-color: #769fb6;
+        background-color: #769fb6;
     }
 
     &__step-container {
-      text-align:center;
-      margin-top:40px;
+        text-align: center;
+        margin-top: 40px;
     }
 
     &__step {
-      text-align: center;
-      margin-top: 4rem;
-      height: 1rem;
-      width: 10rem;
-      margin: 1rem 2rem;
-      background-color: #bbbbbb;
-      border: none;
-      border-radius: 15% 15%;
-      display: inline-block;
-      opacity: 0.5;
+        text-align: center;
+        margin-top: 4rem;
+        height: 1rem;
+        width: 10rem;
+        margin: 1rem 2rem;
+        background-color: #bbbbbb;
+        border: none;
+        border-radius: 15% 15%;
+        display: inline-block;
+        opacity: 0.5;
 
-      &--active {
-        background-color: black;
-        opacity: 1;
-      }
+        &--active {
+            background-color: black;
+            opacity: 1;
+        }
 
-      &--finish {
-        background-color: #dddddd;
-      }
+        &--finish {
+            background-color: #dddddd;
+        }
     }
 
     &__form {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 1px 2px rgba($color-black, 0.6);
-      background-color: $color-login-bg;
-      width: 80rem;
-      height: 50rem;
-      // display: flex;
-      align-items: middle;
-      justify-content: center;
-  
-      &__img {
-        width: 12rem;
-        margin: 2rem;
-        &:hover {
-          transform: scale(1.05);
-        }
-        &:active {
-          transform: scale(1);
-        }
-      }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 1px 2px rgba($color-black, 0.6);
+        background-color: $color-login-bg;
+        width: 80rem;
+        height: 50rem;
+        // display: flex;
+        align-items: middle;
+        justify-content: center;
 
-      &--buttons {
-        overflow:auto;
-      }
+        &__img {
+            width: 12rem;
+            margin: 2rem;
+            &:hover {
+                transform: scale(1.05);
+            }
+            &:active {
+                transform: scale(1);
+            }
+        }
+
+        &--buttons {
+            overflow: auto;
+        }
     }
 
-      &__type {
-      margin-top: 5rem;
+    &__type {
+        margin-top: 5rem;
     }
-
-  }
+}
