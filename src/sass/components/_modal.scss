@@ -1,4 +1,5 @@
 .modal {
+    overflow-y: auto;
     &__options {
         display: flex;
         flex-direction: column;
@@ -61,6 +62,44 @@
     }
 
     &__content {
+        & > p {
+            font-size: 1.5rem;
+        }
+
+        &__radio {
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            &__options {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                & > div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & > label {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+
+        &__slider {
+            & > label {
+                text-align: center;
+                font-size: 1.5rem;
+                display: block;
+            }
+            &__input {
+                width: 90% !important;
+                margin: 0.5rem auto 2rem !important;
+            }
+        }
+
         &__actions {
             display: flex;
             justify-content: space-between;

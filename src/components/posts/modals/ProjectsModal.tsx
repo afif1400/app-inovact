@@ -3,7 +3,7 @@ import ReactModal from 'react-modal'
 import photo from '../../../assets/images/icons/photo.svg'
 import video from '../../../assets/images/icons/video.svg'
 import document from '../../../assets/images/icons/document.svg'
-import { AutoComplete, Tag } from 'antd'
+import { AutoComplete, Slider, Tag, Tooltip } from 'antd'
 
 const customStyles = {
     content: {
@@ -29,6 +29,9 @@ interface IProject {
     description: string
     contributors: string[]
     skills: string[]
+    isComplete: boolean | null
+    peopleJoin: boolean | null
+    completion: number
 }
 
 const ProjectsModal: React.FC<ModalProps> = (props) => {
@@ -37,6 +40,9 @@ const ProjectsModal: React.FC<ModalProps> = (props) => {
         description: '',
         contributors: [],
         skills: [],
+        isComplete: null,
+        peopleJoin: null,
+        completion: 20,
     })
 
     const [contributorOptions, setContributorOptions] = useState<
@@ -108,6 +114,10 @@ const ProjectsModal: React.FC<ModalProps> = (props) => {
         e.preventDefault()
     }
 
+    useEffect(() => {
+        console.log(project)
+    }, [project])
+
     return (
         <ReactModal
             ariaHideApp={false}
@@ -151,6 +161,7 @@ const ProjectsModal: React.FC<ModalProps> = (props) => {
                         style={{ width: '100%' }}
                     >
                         <input
+                            type="search"
                             id="contributor"
                             className="input-component input-component--modal"
                             placeholder="Contributors"
@@ -180,6 +191,7 @@ const ProjectsModal: React.FC<ModalProps> = (props) => {
                         style={{ width: '100%' }}
                     >
                         <input
+                            type="search"
                             className="input-component input-component--modal"
                             placeholder="Skills or Tools used"
                         ></input>
@@ -202,6 +214,101 @@ const ProjectsModal: React.FC<ModalProps> = (props) => {
                                   )
                               })}
                     </div>
+                    <div className="modal__content__radio">
+                        <p>Is the project complete?</p>
+                        <div className="modal__content__radio__options">
+                            <div>
+                                <label htmlFor="yes">Yes</label>
+                                <input
+                                    id="yes"
+                                    type="radio"
+                                    name="isComplete"
+                                    onChange={(e) => {
+                                        setProject((prev) => {
+                                            return { ...prev, isComplete: true }
+                                        })
+                                    }}
+                                ></input>
+                            </div>
+                            <div>
+                                <label htmlFor="no">No</label>
+                                <input
+                                    id="no"
+                                    type="radio"
+                                    name="isComplete"
+                                    onChange={(e) => {
+                                        setProject((prev) => {
+                                            return {
+                                                ...prev,
+                                                isComplete: false,
+                                            }
+                                        })
+                                    }}
+                                ></input>
+                            </div>
+                        </div>
+                    </div>
+                    {project.isComplete !== true ? (
+                        <div>
+                            <div className="modal__content__radio">
+                                <p>Are you looking for people to join in?</p>
+                                <div className="modal__content__radio__options">
+                                    <div>
+                                        <label htmlFor="yes">Yes</label>
+                                        <input
+                                            id="yes"
+                                            type="radio"
+                                            name="peopleJoin"
+                                            onChange={(e) => {
+                                                setProject((prev) => {
+                                                    return {
+                                                        ...prev,
+                                                        peopleJoin: true,
+                                                    }
+                                                })
+                                            }}
+                                        ></input>
+                                    </div>
+                                    <div>
+                                        <label htmlFor="no">No</label>
+                                        <input
+                                            id="no"
+                                            type="radio"
+                                            name="peopleJoin"
+                                            onChange={(e) => {
+                                                setProject((prev) => {
+                                                    return {
+                                                        ...prev,
+                                                        peopleJoin: false,
+                                                    }
+                                                })
+                                            }}
+                                        ></input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="modal__content__slider">
+                                <label htmlFor="completion">
+                                    Whats the progress of your project?
+                                </label>
+                                <Tooltip title={project.completion}>
+                                    <Slider
+                                        defaultValue={30}
+                                        className="modal__content__slider__input"
+                                        value={project.completion}
+                                        onChange={(value) => {
+                                            setProject((prev) => {
+                                                return {
+                                                    ...prev,
+                                                    completion: value,
+                                                }
+                                            })
+                                        }}
+                                    />
+                                </Tooltip>
+                            </div>
+                        </div>
+                    ) : null}
 
                     <div className="modal__content__actions">
                         <a
