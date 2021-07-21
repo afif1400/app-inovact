@@ -1,8 +1,48 @@
 .input-component {
-    display: block;
-    width: 30rem;
-    max-width: 30rem;
-    padding: 1rem;
+  display: block;
+  width: 30rem;
+  max-width: 30rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  border-style: solid !important;
+  border-color: $color-blue-sky;
+  background-color: $color-blue-light;
+  margin-bottom: 2rem;
+
+  &__userInput{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    padding: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: $color-blue-light;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  &__userInputFile{
+    background-color: indigo;
+    color: white;
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  &:focus {
+    outline: none;
+    border: 2px solid $color-blue-sky;
+    box-shadow: 0 1px 2px rgba($color-blue-sky, 0.6);
+  }
+  &--search {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid white;
+    height: 3.5rem;
     font-size: 1.5rem;
     border-radius: 15px;
     border-style: solid !important;

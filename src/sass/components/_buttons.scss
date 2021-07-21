@@ -1,15 +1,28 @@
 .button {
-    &:link,
-    &:visited {
-        display: block;
-        font-size: 2rem;
-        padding: 1rem;
-        border-radius: 15px;
-        color: $color-white;
-        text-decoration: none;
-        transition: all 0.2s;
-        @include component-shadow;
-    }
+  &:link,
+  &:visited {
+    display: block;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    color: $color-white;
+    text-decoration: none;
+    transition: all 0.2s;
+    box-shadow: 0 1px 2px $color-component;
+  }
+  &:hover {
+    box-shadow: 0 2px 4px $color-component;
+  }
+  &:active {
+    transform: scale(0.95);
+    box-shadow: 0 0.5px 1px $color-component;
+  }
+  
+  &--blue {
+    background-color: $color-component;
+  }
+  &--purple {
+    background-color: $color-gradient-2;
     &:hover {
         box-shadow: 0 2px 4px $color-shadow;
     }

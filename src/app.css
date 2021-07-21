@@ -43,6 +43,12 @@ p {
   .heading-login--secondary {
     font-size: 2rem; }
 
+.heading-user {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem; }
+  .heading-user--secondary {
+    font-size: 1.5rem; }
+
 .u-center-text {
   text-align: center; }
 
@@ -51,6 +57,9 @@ p {
 
 .u-right-text {
   text-align: right; }
+
+.u-margin-top-small {
+  margin-top: 1rem; }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
@@ -122,6 +131,26 @@ p {
   border-color: #a8dadc;
   background-color: #f6ffff;
   margin-bottom: 2rem; }
+  .input-component__userInput {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    padding: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #f6ffff;
+    margin-bottom: 2rem;
+    justify-content: center; }
+  .input-component__userInputFile {
+    background-color: indigo;
+    color: white;
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem; }
   .input-component:focus {
     outline: none;
     border: 2px solid #a8dadc;
@@ -554,11 +583,17 @@ p {
       display: none; } }
 
 .user-detail__container {
-  background-color: #769fb6; }
+  background-color: #779fb6; }
 
 .user-detail__step-container {
   text-align: center;
   margin-top: 40px; }
+
+.user-detail__input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
 
 .user-detail__step {
   text-align: center;
@@ -583,16 +618,27 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 15px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: #e5e5e5;
-  width: 80rem;
-  height: 50rem;
+  z-index: 1;
+  background: inherit;
+  width: 77rem;
+  height: 500px;
   align-items: middle;
   justify-content: center; }
+  .user-detail__form:before {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; }
   .user-detail__form__img {
-    width: 12rem;
+    width: 18rem;
     margin: 2rem; }
     .user-detail__form__img:hover {
       transform: scale(1.05); }
@@ -603,3 +649,37 @@ p {
 
 .user-detail__type {
   margin-top: 5rem; }
+
+.background {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #e5e5e5; }
+  .background__topLeft {
+    position: absolute;
+    top: -30px;
+    left: -10px;
+    width: 300px;
+    height: 310px; }
+  .background__topRight {
+    position: relative;
+    left: 78%;
+    width: 300px;
+    height: 310px; }
+  .background__top {
+    position: relative;
+    left: 15%;
+    top: -130px;
+    width: 300px;
+    height: 210px; }
+  .background__bottomLeft {
+    width: 332px;
+    height: 306px;
+    position: relative;
+    top: 49%;
+    left: -42%; }
+  .background__bottomRight {
+    width: 325px;
+    height: 325px;
+    position: relative;
+    top: 49%;
+    left: 10%; }
