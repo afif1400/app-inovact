@@ -1,29 +1,29 @@
-import { Project } from "./../types/project-types";
-import * as ActionType from "../types/action-types";
+import { Project } from './../types/project-types'
+import * as ActionType from '../types/action-types'
 
 interface projectsState {
-	loading: boolean;
-	error: String | null;
-	data: Project[];
+    loading: boolean
+    error: String | null
+    data: Project[]
 }
 
 const initialState: projectsState = {
-	loading: false,
-	error: null,
-	data: [],
-};
+    loading: false,
+    error: null,
+    data: [],
+}
 
 const reducer = (
-	state: projectsState = initialState,
-	action: any
+    state: projectsState = initialState,
+    action: any
 ): projectsState => {
-	switch (action.type) {
-		case ActionType.FETCH_PROJECT_ALL:
-			//? return the updated state
-			return { ...state };
-		default:
-			return { ...state };
-	}
-};
+    switch (action.type) {
+        case ActionType.FETCH_PROJECT_ALL:
+            //? return the updated state
+            return { ...state }
+        default:
+            return { ...state }
+    }
+}
 
-export default reducer;
+export default reducer

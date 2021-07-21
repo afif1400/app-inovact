@@ -1,106 +1,105 @@
 .nav-component {
-  @include component-shadow;
-  width: 100%;
-  height: 6.5rem;
-  background-color: $color-component;
-  display: flex;
-  align-items: center;
-  &__items {
-    width: 80%;
-    margin: 0 auto;
+    @include component-shadow;
+    width: 100%;
+    height: 6.5rem;
+    background-color: $color-component;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    @include respond(tab-land) {
-      width: 98%;
+    &__items {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include respond(tab-land) {
+            width: 98%;
+        }
+        @include respond(tab-port) {
+            width: 80%;
+        }
+        @include respond(phone) {
+            width: 95%;
+            justify-content: space-around;
+        }
     }
-    @include respond(tab-port) {
-      width: 80%;
+    &__search {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 12px;
+        width: 37rem;
+        background-color: $color-white;
+        padding: 0 1rem 0 0;
+        @include respond(phone) {
+            width: 30rem;
+        }
+        @include respond(small-phone) {
+            width: 25rem;
+        }
     }
-    @include respond(phone) {
-      width: 95%;
-      justify-content: space-around;
+    &__logo {
+        width: 50px;
+        @include respond(tab-port) {
+            display: none;
+        }
     }
-  }
-  &__search {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 12px;
-    width: 37rem;
-    background-color: $color-white;
-    padding: 0 1rem 0 0;
-    @include respond(phone) {
-      width: 30rem;
+    &__link {
+        &:link,
+        &:visited {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $color-white;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        @include respond(tab-port) {
+            display: none;
+        }
+        @include hover-cta(secondary);
     }
-    @include respond(small-phone) {
-      width: 25rem;
+    &__notification {
+        width: 20px;
+        @include filter-white;
     }
-  }
-  &__logo {
-    width: 50px;
-    @include respond(tab-port) {
-      display: none;
+    &__user-profile {
+        width: 50px;
+        border-radius: 50%;
+        @include respond(tab-port) {
+            display: none;
+        }
     }
-  }
-  &__link {
-    &:link,
-    &:visited {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: $color-white;
-      text-decoration: none;
-      transition: all 0.2s;
+    &--bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: none;
+        height: 5rem;
+        box-shadow: 0px -1px 1px $color-shadow;
+        // z-index: 1;
+        @include respond(tab-port) {
+            display: initial;
+        }
     }
-    @include respond(tab-port) {
-      display: none;
+    &__hamburger {
+        width: 40px;
+        border-radius: 100%;
+        cursor: pointer;
+        display: none;
+        @include respond(tab-port) {
+            display: initial;
+        }
     }
-    @include hover-cta(secondary);
-  }
-  &__notification {
-    width: 20px;
-    @include filter-white;
-  }
-  &__user-profile {
-    width: 50px;
-    border-radius: 50%;
-    @include respond(tab-port) {
-      display: none;
-    }
-  }
-  &--bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: none;
-    height: 5rem;
-    box-shadow: 0px -1px 1px $color-shadow;
-    z-index: 1;
-    @include respond(tab-port) {
-      display: initial;
-    }
-  }
-  &__hamburger {
-    width: 50px;
-    border-radius: 100%;
-    cursor: pointer;
-    // @include component-shadow;
-    display: none;
-    @include respond(tab-port) {
-      display: initial;
-    }
-  }
 }
 
 .nav-hamburger {
-  animation: moveInLeft 0.5s;
-  width: 80vw;
-  max-width: 30rem;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: black;
-  z-index: 2;
+    animation: moveInLeft 0.5s;
+    width: 80vw;
+    max-width: 30rem;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: black;
+    z-index: 2;
 }

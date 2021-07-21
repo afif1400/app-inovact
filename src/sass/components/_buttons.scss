@@ -24,17 +24,40 @@
   &--purple {
     background-color: $color-gradient-2;
     &:hover {
-      @include component-shadow;
+        box-shadow: 0 2px 4px $color-shadow;
     }
+    &:active {
+        transform: scale(0.95);
+        box-shadow: 0 0.5px 1px $color-shadow;
+    }
+    &--blue {
+        background-color: $color-component;
+    }
+    &--purple {
+        background-color: $color-gradient-2;
+        &:hover {
+            @include component-shadow;
+        }
 
-    &--round {
-      border-radius: 50% !important;
-      background-color: black;
-      padding: 5px !important;
-      background: url('/src/assets/images/login/buttonArrow.png') no-repeat;
-      width: 5.5rem;
-      height: 5.5rem;
-      margin: auto;
+        &--round {
+            border-radius: 50% !important;
+            background-color: black;
+            padding: 5px !important;
+            background: url('/src/assets/images/login/buttonArrow.png')
+                no-repeat;
+            width: 5.5rem;
+            height: 5.5rem;
+            margin: auto;
+        }
     }
-  }
+    &--modal {
+        width: 30%;
+        text-align: center;
+        &--cancel {
+            background-color: green;
+        }
+        &--close {
+            background-color: red;
+        }
+    }
 }

@@ -1,12 +1,11 @@
 .user-detail {
     &__container {
       background-color: rgb(119, 159, 182);
-      
     }
 
     &__step-container {
-      text-align:center;
-      margin-top:40px;
+        text-align: center;
+        margin-top: 40px;
     }
 
     &__input-container{
@@ -17,25 +16,25 @@
    }
 
     &__step {
-      text-align: center;
-      margin-top: 4rem;
-      height: 1rem;
-      width: 10rem;
-      margin: 1rem 2rem;
-      background-color: #bbbbbb;
-      border: none;
-      border-radius: 15% 15%;
-      display: inline-block;
-      opacity: 0.5;
+        text-align: center;
+        margin-top: 4rem;
+        height: 1rem;
+        width: 10rem;
+        margin: 1rem 2rem;
+        background-color: #bbbbbb;
+        border: none;
+        border-radius: 15% 15%;
+        display: inline-block;
+        opacity: 0.5;
 
-      &--active {
-        background-color: black;
-        opacity: 1;
-      }
+        &--active {
+            background-color: black;
+            opacity: 1;
+        }
 
-      &--finish {
-        background-color: #dddddd;
-      }
+        &--finish {
+            background-color: #dddddd;
+        }
     }
 
     &__form {
@@ -74,17 +73,15 @@
         &:active {
           transform: scale(1);
         }
-      }
 
-      &--buttons {
-        overflow:auto;
-      }
+        &--buttons {
+            overflow: auto;
+        }
     }
 
-      &__type {
-      margin-top: 5rem;
+    &__type {
+        margin-top: 5rem;
     }
-
   }
 
   .background{

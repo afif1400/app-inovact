@@ -1,17 +1,31 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif !important;
-  background-color: $color-bg;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: $color-bg;
+    font-size: 10px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 !important;
+}
+
+p {
+    margin: 0 !important;
 }
