@@ -1,12 +1,20 @@
 .user-detail {
     &__container {
-      background-color: #769fb6;
+      background-color: rgb(119, 159, 182);
+      
     }
 
     &__step-container {
       text-align:center;
       margin-top:40px;
     }
+
+    &__input-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
 
     &__step {
       text-align: center;
@@ -31,24 +39,35 @@
     }
 
     &__form {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 1px 2px rgba($color-black, 0.6);
-      background-color: $color-login-bg;
-      width: 80rem;
-      height: 50rem;
-      // display: flex;
-      align-items: middle;
-      justify-content: center;
-  
-      &__img {
-        width: 12rem;
-        margin: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 1rem;
+        border-radius: 15px;
+        box-shadow: 0 1px 2px rgba($color-black, 0.6);
+        z-index: 1;
+        // background-color: rgba(229, 229, 229,0.5);
+        background:inherit;
+        width: 77rem;
+        height: 500px;
+        align-items: middle;
+        justify-content: center;
+        &:before {
+          background-color: rgba(255, 255, 255, 0.3);
+          backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+          content: '';
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left:0;
+          width: 100%;
+          z-index: -1;
+        }
+        &__img {
+          width: 18rem;
+          margin: 2rem;
         &:hover {
           transform: scale(1.05);
         }
@@ -66,4 +85,45 @@
       margin-top: 5rem;
     }
 
+  }
+
+  .background{
+    height:100vh;
+    overflow: hidden;
+    background-color: $color-login-bg;
+    &__topLeft{
+      position: absolute;
+      top:-30px;
+      left:-10px;
+      width:300px;
+      height: 310px;
+    }
+    &__topRight{
+      position: relative;
+      //top:50px;
+      left:78%;
+      width:300px;
+      height: 310px;
+    }
+    &__top{
+      position: relative;
+      left:15%;
+      top:-130px;
+      width:300px;
+      height: 210px;
+    }
+    &__bottomLeft{
+      width: 332px;
+      height :306px;
+      position: relative;
+      top:49%;
+      left:-42%;
+    }
+    &__bottomRight{
+      width: 325px;
+      height :325px;
+      position: relative;
+      top:49%;
+      left:10%;
+    }
   }

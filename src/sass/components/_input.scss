@@ -9,6 +9,30 @@
   border-color: $color-blue-sky;
   background-color: $color-blue-light;
   margin-bottom: 2rem;
+
+  &__userInput{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    padding: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: $color-blue-light;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  &__userInputFile{
+    background-color: indigo;
+    color: white;
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
   &:focus {
     outline: none;
     border: 2px solid $color-blue-sky;
