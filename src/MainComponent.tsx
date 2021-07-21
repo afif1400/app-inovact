@@ -1,12 +1,19 @@
-import React from "react";
-// import LoginForm from "./components/auth/LoginForm";
-//import Form from "./components/userInfo/StepForm";
-import UserDetails from './components/userInfo/UserInfo';
-const MainComponent = () => {
-	return <div>
-		{/* <LoginForm/> */}
-		<UserDetails/>
-	</div>;
-};
+import React from 'react'
+import LoginForm from './components/auth/LoginForm'
+import Form from './components/userInfo/StepForm'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Feed from './components/feed/Feed'
 
-export default MainComponent;
+const MainComponent = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={LoginForm} />
+        <Route exact path="/form" component={Form} />
+        <Route exact path="/feed" component={Feed} />
+      </Switch>
+    </Router>
+  )
+}
+
+export default MainComponent

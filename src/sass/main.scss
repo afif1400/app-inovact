@@ -1,13 +1,15 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
-@import "components/buttons";
-@import "components/input";
+@import 'components/buttons';
+@import 'components/input';
+@import 'components/nav';
 
-@import "pages/login-page";
-@import "pages/user-detail";
+@import 'pages/login-page';
+@import 'pages/feed';
+@import 'pages/user-detail';

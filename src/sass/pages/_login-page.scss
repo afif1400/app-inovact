@@ -3,6 +3,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    background-color: $color-white;
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 2rem;
@@ -48,11 +49,11 @@
   & > div > a {
     &:link,
     &:visited {
-      color: $color-login-component;
+      color: $color-component;
       text-decoration: none;
       transition: all 0.2s;
       &:hover {
-        background-color: $color-login-component;
+        background-color: $color-component;
         color: $color-white;
         padding: 0.3rem;
         border-radius: 15px;

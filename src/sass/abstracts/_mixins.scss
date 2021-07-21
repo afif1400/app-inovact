@@ -1,4 +1,9 @@
 @mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media only screen and (max-width: 27.625em) {
+      @content;
+    }
+  }
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
       @content;
@@ -18,5 +23,39 @@
     @media only screen and (min-width: 112.5em) {
       @content;
     } //1800
+  }
+}
+
+@mixin component-shadow {
+  box-shadow: 0 1px 1px $color-shadow;
+}
+
+@mixin filter {
+  filter: invert(48%) sepia(41%) saturate(707%) hue-rotate(166deg)
+    brightness(90%) contrast(88%);
+}
+
+@mixin filter-white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+}
+
+@mixin hover-cta($color) {
+  &:hover {
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: $color-white;
+    // background-image: linear-gradient(
+    //   to right,
+    //   $color-gradient-1,
+    //   $color-gradient-2
+    // );
+    @if $color == primary {
+      background-color: $color-component;
+    }
+
+    @if $color == secondary {
+      background-color: $color-component-secondary;
+    }
   }
 }
